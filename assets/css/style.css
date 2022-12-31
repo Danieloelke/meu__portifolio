@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(41, 40, 40);
+}
+
+header{
+    width: 98vw;
+    height: 96.3vh;
+    background-image: url(/assets/img/background.jpg);
+    opacity: 0.79;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid rgb(41, 40, 40);
+    border-radius: 10px;
+    box-shadow: 0 20px 60px black;
+}
+
+#note{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(41, 40, 40);
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%);
+}
+
+#logo__inicio{
+    width: 96px;
+    height: 114px;
+    background-image: url('/assets/img/logo-daniel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav h1{
+    color: rgb(131, 127, 127);
+    font-size: 30px;
+}
+
+nav, ul{
+    display: flex;
+}
+
+nav{
+    justify-content: space-between;
+    margin: 20px;
+}
+
+ul{
+    margin-top: 42px;
+}
+
+ul li{
+    margin-right: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(131, 127, 127);
+    font-size: 1.2rem;
+
+}
+
+ul li a:hover{
+    background-image: linear-gradient(0deg, rgba(21, 21, 21, 0.5) 10%, rgba(129, 125, 125, 0.5));
+    border-top: 2px solid rgb(239, 239, 239);
+    border-radius: 2px;
+    transition: 0.2s all;
+    
+}
+
+
+
+.texto__principal{
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    border-left: 5px solid white;
+    padding-left: 15px;
+}
+
+.botao{
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+#botao__contato{
+    border: none;
+    color: rgb(36, 255, 207);
+    background-color: transparent;
+    border: 2px solid rgb(36, 255, 207);
+    width: 200px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    transition: 0.3s all;
+    position: relative;
+}
+
+#botao__contato:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 40px;
+    background-color: rgba(36, 255, 207, 0.5);
+    transition: all 0.2s ease;
+    color: black;
+}
+
+#botao__contato:hover:before{
+    width: 100%;
+}
+
+#detalhe{
+    color: rgb(112, 112, 115);
+    margin-left: 105px;
+    margin-top: 31px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@keyframes animacao {
+    from{top: 3%;}
+    to{top: 5%;}
+
+}
+
+.vejaMais{
+    transform: rotate(90deg);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 47%;
+    top: 3%;
+    height: 95vw;
+    animation: animacao 1s linear infinite alternate;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    width: 100vw;
+    height: 1000px;
+
+}
+
+.iphone{
+    width: 100vw;
+    height: 800px;
+}
+
+#moldura-iphone{
+    display: flex;
+    justify-content: center;
+}
+
+#moldura-iphone img{
+    position: relative;
+    width: 220px;
+    height: 420px;
+    margin-top: -90px;
+}
+
+[data-anima]{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+[data-anima='centro']{
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anima].animacao{
+    opacity: 1 ;
+    transform: translate3d(0,0,0);
+}
+
+#iphone-conteudo{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgb(50, 50, 50), rgb(141, 133, 133));
+    width: 200px;
+    height: 400px;
+    margin-top: -79px;
+    border-radius: 14px;
+    box-shadow: 0 30px 50px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-skil{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+
+@keyframes carregamento-front {
+    from{width: 0px;}
+    to{width: 150px;}
+}
+
+@keyframes carregamento-back {
+    from{width: 0px;}
+    to{width: 140px;}
+}
+
+@keyframes carregamento-html {
+    from{width: 0px;}
+    to{width: 130px;}
+}
+
+@keyframes carregamento-css {
+    from{width: 0px;}
+    to{width: 120px;}
+}
+
+@keyframes carregamento-js {
+    from{width: 0px;}
+    to{width: 110px;}
+}
+
+.charge{
+    height: 2px;
+    margin: 14px 19px;
+
+}
+
+
+#front{
+    width: 150px;
+    background-color: rgb(49, 122, 185);
+    animation: carregamento-front 6s linear infinite alternate;
+}
+
+#back{
+    width: 140px;
+    background-color: rgb(255, 255, 255);
+    animation: carregamento-back 6s linear infinite alternate;
+}
+
+#html{
+    width: 130px;
+    background-color: rgb(220, 55, 30);
+    animation: carregamento-html 6s linear infinite alternate;
+}
+
+#css{
+    width: 120px;
+    background-color: rgb(49, 122, 185);
+    animation: carregamento-css 6s linear infinite alternate;
+}
+
+#js{
+    width: 110px;
+    background-color: rgb(235, 213, 63);
+    animation: carregamento-js 6s linear infinite alternate;
+    
+}
+
+.skils{
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portifolio{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    background-color: rgb(41, 40, 40);
+
+
+
+}
+
+.portifolio__cabecalho{
+    width: 100vw;
+    height: 400px;
+
+}
+
+#portifolio__titulo{
+    position: relative;
+    width: 50%;
+    top: -184%;
+    left: 5%;
+}
+
+#portifolio__titulo h2{
+    font-size: 50px;
+    margin-left: 74px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#portifolio__titulo p{
+    font-size: 15px;
+    margin-left: -225px;
+    margin-top: 39px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+.text{
+    position: absolute;
+    top: 105%;
+    left: 63%;
+}
+
+#texto__tela{
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    resize: none;
+    caret-color: transparent;
+}
+
+
+
+.portifolio__item{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px 270px;
+    justify-content: space-around;
+    margin: 90px 20px;
+}
+
+.portifolio__item div {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+#netflix-landing__page,
+#netflix-landing__login,
+#calculadora,
+#emBreve,
+#alura-mid{
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#netflix-landing__page img,
+#netflix-landing__login img,
+#calculadora img,
+#emBreve img,
+#alura-mid img{
+    width: 270px;
+    height: 270px;
+    transition: 200ms;
+    opacity: 0.6;
+}
+
+#netflix-landing__page img:hover,
+#netflix-landing__login img:hover,
+#calculadora img:hover,
+#emBreve img:hover,
+#alura-mid img:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+    opacity: 1;
+}
+
+#verMais{
+    color: black;
+    position: relative;
+    top: -70%;
+    left: 30%;
+    background-color: rgb(36, 255, 227);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: 200ms;
+    border: none;
+
+}
+
+#verMais p{
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+#verMais:hover{
+    opacity: 0.8;
+    transition: 200ms;
+}

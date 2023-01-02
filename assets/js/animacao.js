@@ -17,22 +17,3 @@ if (elemento.length){
         animaScroll()
     })
 }
-
-
-
-
-
-
-
-
-
-// function mouseOver(){
-//     document.getElementById('netflix-landing__page').innerHTML = `<div id="saibaMais"><p id="verMais">Ver Mais</p></div>`;
-    
-// }
-
-// function mouseOut(){
-//     document.getElementById('netflix-landing__page').innerHTML = `<div></div>`
-  
-// }
-
